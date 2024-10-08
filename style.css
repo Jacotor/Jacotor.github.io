@@ -1,28 +1,268 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #0d0f14; /* Dark space-like background */
+    color: #d0d0d0; /* Soft white text for contrast */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  nav {
-    background-color: #333;
-    padding: 1em;
-  }
-  
-  nav a {
-    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00aaff; /* Spacey blue for headers */
+    font-family: 'Orbitron', sans-serif; /* Sleek, techy font for headings */
+    margin: 20px 0;
+}
+
+p, li {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #11151c; /* Darker background for the header */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #00aaff; /* Glowing blue bottom border */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main Content Area */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 40px 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #00aaff;
+    color: #11151c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+}
+
+button:hover {
+    background-color: #008fcc; /* Darker blue for hover effect */
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="email"], textarea {
+    background-color: #1b202a;
+    border: 1px solid #00aaff;
+    color: #d0d0d0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-color: #008fcc; /* Slight glow when focused */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #11151c;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #00aaff;
+}
+
+footer p {
+    color: #d0d0d0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00aaff;
     text-decoration: none;
-    padding: 0.5em 1em;
-    margin-right: 1em;
-    background-color: #555;
-    border-radius: 4px;
-  }
-  
-  nav a:hover {
-    background-color: #777;
-  }
-  
-  .content {
-    padding: 2em;
-  }
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #008fcc;
+}
+
+/* Additional Effects */
+a {
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #008fcc;
+}
+
+.box-shadow-effect {
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5); /* Subtle glowing box shadow */
+}
+
+.glow-effect {
+    text-shadow: 0 0 8px #00aaff; /* Glowing text effect for futuristic look */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+.quiz-container {
+    background-color: #1b202a; /* Dark background for the quiz area */
+    color: #d0d0d0; /* Light text for readability */
+    padding: 30px;
+    border-radius: 10px; /* Slightly rounded edges for a sleek look */
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.2); /* Subtle glowing box shadow */
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.quiz-container h2 {
+    color: #00aaff; /* Spacey blue for quiz section headers */
+    font-family: 'Orbitron', sans-serif; /* Futuristic heading font */
+    margin-bottom: 20px;
+}
+
+.quiz-container label {
+    font-size: 1.1rem;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #0d0f14; /* Darker background for quiz options */
+    border: 1px solid #00aaff; /* Glowing blue borders for quiz options */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quiz-container label:hover {
+    background-color: #11151c; /* Slight color change on hover */
+}
+
+.quiz-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.quiz-container button {
+    background-color: #00aaff;
+    color: #0d0f14;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+}
+
+.quiz-container button:hover {
+    background-color: #008fcc;
+}
+
+/* Ensure inputs don't break the layout */
+.quiz-container input[type="radio"] {
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    transition: color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0bb0da;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b202a;
+}
+
+footer a:hover {
+    color: #008fcc;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.quiz-container button:hover {
+    background-color: #008fcc;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.quiz-container label:hover {
+    background-color: #11151c;
+    box-shadow: 0 2px 6px rgba(0, 170, 255, 0.2); /* Add subtle shadow */
+}
+
+button {
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+}
+
+button:hover {
+    background-color: #008fcc;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+label:hover {
+    background-color: #11151c;
+    box-shadow: 0 2px 6px rgba(0, 170, 255, 0.2); /* Add subtle shadow */
+}
+
+/* Button Styling for Header Links */
+header nav a {
+    color: #0d0f14;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #00aaff; /* Button background color */
+    border-radius: 5px;
+    border: none;
+    display: inline-block; /* Makes the links appear like buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #008fcc; /* Darker blue for hover effect */
+    color: #d0d0d0; /* Text color on hover */
+}
+/* General link styling remains the same */
+a {
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #008fcc;
+}
