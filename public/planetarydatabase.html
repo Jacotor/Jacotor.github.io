@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database-Nexus Dynamics</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result-container {
+            margin-top: 20px;
+            width: 80vw;
+            max-width: 1200px;
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            word-wrap: break-word;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        // Check if the user is logged in as soon as the page loads
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            // If not logged in, redirect to the login page
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Nexus Dynamics Database</h2>
+        <input type="text" id="searchInput" placeholder="Search location..."><br>
+        <button onclick="searchLocation()">Search</button>
+    </div>
+    <div class="result-container">
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        const locations = {
+            "nexus": "Nexus is the core of our operations, where advanced research and development take place.",
+            "eden": "Eden is a paradise, a vast and mythical land filled with ancient magic.",
+            "wyndem": "Wyndem is a floating city governed by capitalism, layered and structured by wealth.",
+            "sea of trees": "The Sea of Trees is an unexplored crater filled with mysterious monsters."
+        };
+
+        function searchLocation() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const resultDiv = document.getElementById('result');
+
+            if (locations[searchTerm]) {
+                resultDiv.innerHTML = locations[searchTerm];
+                resultDiv.classList.remove('error');
+            } else {
+                resultDiv.innerHTML = 'Location not found.';
+                resultDiv.classList.add('error');
+            }
+        }
+
+        function logout() {
+            // Clear login status and redirect to home page
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'index.html'; // Redirect after logout
+        }
+    </script>
+</body>
+</html>
