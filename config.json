@@ -1,5 +1,18 @@
 {
     "username": "admin",
     "password": "panther6mrs",
-    "database": "planetarydatabase.html"
+    "database": "planetarydatabase.html",
+    "PLANET1NAME": "Earth",
+    "PLANET1INFO": "Earth is a planet with a higher than average technological advancement, but it is ultimately held back by its strange way of repelling magic.",
+    "PLANET2NAME": "Eden",
+    "PLANET2INFO": "Eden has a very small number of humans and a mostly undeveloped society. This makes it difficult to do any manufacturing, but it has an abundance of natural resources.",
+    "PLANET3NAME": "Elytris",
+    "PLANET3INFO": "Though Nexus Dynamics was initially created on Elytris, the planet has since gone through a technilogical regression caused by a dropoff in population. Many facilities are still operation thanks to automation, but repairs are needed along with defenses against raiders.",
+    "PLANET4NAME": "Enderland",
+    "PLANET4INFO": "A planet with no sun, all people of Enderland live underground surviving thanks to an artifical heat source. All habitable land is split up into six rings with the larger outer rings having large poor populations with progressively more rights the closer to the center the rings are. Of course all rings are governed by the whims of a master in the center ring. A bizarre system is in place to earn the right to enter new rings by challenging others to games. Social credit earned through skill. Not a good place to do business.",
+    "PLANET5NAME": "Eternus",
+    "PLANET5INFO": "Eternus is unique in that there is little to no human life. Instead, the majority are a type of creature that call themselves demons. Many of the nations of the world are violent or undeveloped, but the remnants of Tantara and his conquest leaves some prime orderly trading and work areas.",
+    "PLANET6NAME": "Etherium",
+    "PLANET6INFO": "Etherium is lagging behind earth technology wise, but their combination of technology with magic leads to unique creations that could only be rivaled by Elytris in its prime. The planet has multiple countries, but almost all of them are industrialized. Among a mostly human populace are the Skidge who can change appearance and Lexians, a lizard like race that is especially dangerous. We should investigate a good spot for a branch here immediately."
+
 }

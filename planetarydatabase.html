@@ -72,12 +72,20 @@
     </div>
 
     <script>
-        const locations = {
-            "nexus": "Nexus is the core of our operations, where advanced research and development take place.",
-            "eden": "Eden is a paradise, a vast and mythical land filled with ancient magic.",
-            "wyndem": "Wyndem is a floating city governed by capitalism, layered and structured by wealth.",
-            "sea of trees": "The Sea of Trees is an unexplored crater filled with mysterious monsters."
-        };
+        let locations = {};
+        // Fetch data from config.json
+        fetch('config.json')
+            .then(response => response.json())
+            .then(data => {
+                locations[data.PLANET1NAME.toLowerCase()] = data.PLANET1INFO;
+                locations[data.PLANET2NAME.toLowerCase()] = data.PLANET2INFO;
+                locations[data.PLANET3NAME.toLowerCase()] = data.PLANET3INFO;
+                locations[data.PLANET4NAME.toLowerCase()] = data.PLANET4INFO;
+                locations[data.PLANET5NAME.toLowerCase()] = data.PLANET5INFO;
+                locations[data.PLANET6NAME.toLowerCase()] = data.PLANET6INFO;
+            })
+            .catch(error => console.error("Error loading config:", error));
+
 
         function searchLocation() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
