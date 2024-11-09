@@ -1,100 +1,64 @@
-//Congratulations you found the config file. 
-//Normally this would all be private, but on github pages the only way to make it private is to host it locally. 
-//Which is super annoying.
-//Please ignore this file.
-//You can find everything you need on the website itself without looking at the source code.
-//I'll even give you a hint.
-//The privacy page might have more than meets the eye.
-//Good luck.
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 {
+    "comment": "Congratulations you found the config file. 
+Normally this would all be private, but on github pages the only way to make it private is to host it locally. 
+Which is super annoying.
+Please ignore this file.
+You can find everything you need on the website itself without looking at the source code.
+I'll even give you a hint.
+The privacy page might have more than meets the eye.
+Good luck.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",
+
     "username": "admin",
     "password": "panther6mrs",
     "database": "planetarydatabase.html",
