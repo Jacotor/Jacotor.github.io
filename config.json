@@ -105,7 +105,7 @@
     "PLANET1NAME": "Earth",
     "PLANET1INFO": "Earth is a planet with a higher than average technological advancement, but it is ultimately held back by its strange way of repelling magic. What stands out about Earth is its mass media and the ease of access of information. This can be used to spread ideas across the entire planet making it a prime spot for headquarters after the move from Elytris.",
     "PLANET2NAME": "Eden",
-    "PLANET2INFO": "Eden has a very small number of humans and a mostly undeveloped society. This makes it difficult to do any manufacturing, but it has an abundance of natural resources. The ecosystem of the planet is incredibly complex giving way to many different strange creatures and non-human races.",
+    "PLANET2INFO": "Eden has a very small number of humans and a mostly undeveloped society. This makes it difficult to do any manufacturing, but it has an abundance of natural resources. The ecosystem of the planet is incredibly complex giving way to many different strange creatures and non-human races. It has been noted to stay away from the large obsidian-like structures as dangerous creatures are contained within.",
     "PLANET3NAME": "Elytris",
     "PLANET3INFO": "Though Nexus Dynamics was initially created on Elytris, the planet has since gone through a technological regression caused by a dropoff in population. Many facilities are still operational thanks to automation, but repairs are needed along with defenses against raiders. Remainders of experiments to support the population are seen in nonhuman races such as the Blumin, which evolved from beetles, and sentient machines.",
     "PLANET4NAME": "Enderland",
@@ -139,5 +139,5 @@
     "PLANET17INFO": "Newly found planet. Research in progress.",
     "PLANET18NAME": "Pandora",
     "PLANET18INFO": "The so called 'west' of this Pandora is highly chaotic with very little enforced law. Elsewhere multiple studies in local magic and alchemy show the potential for real progress. We should make contact with the various schools and see if we can learn anything from them."
-
+    
 }
