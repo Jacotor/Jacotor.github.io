@@ -31,6 +31,7 @@
             })
             .then(data => {
                 validUsername = data.username;
+                validUsername2 = data.username2;
                 validPassword = data.password;
                 database = data.database;
             })
@@ -51,7 +52,7 @@
             console.log("Valid Password: ", validPassword);
 
             // Simple client-side validation
-            if (inputUsername === validUsername && inputPassword === validPassword) {
+            if (inputUsername === validUsername && inputPassword === validPassword || inputeUsername === validUsername2 && inputPassword === validPassword) {
                 console.log("Login successful!");
                 localStorage.setItem('loggedIn', 'true');
                 window.location.href = database;
