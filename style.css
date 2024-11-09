@@ -354,3 +354,10 @@ section.about-section {
     margin-top: 20px; /* Reduce the space above the content */
     padding-top: 0;   /* Ensure there's no unnecessary padding */
 }
+
+.service-item img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

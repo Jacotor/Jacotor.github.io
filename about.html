@@ -55,7 +55,47 @@
         font-size: 1rem;
         color: #d0d0d0;
     }
-</style>
+
+    /* Styling for the interview section */
+    .interview-button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #00aaff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Orbitron', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .interview-button:hover {
+        background-color: #0077cc;
+    }
+
+    .interview-section {
+        display: none;
+        margin-top: 20px;
+        color: #d0d0d0;
+        text-align: left;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #00aaff;
+        border-radius: 5px;
+        background-color: #1a1c23;
+    }
+
+    .interview-section p {
+        margin: 10px 0;
+    }
+
+    .highlight {
+        color: #00aaff;
+        font-weight: bold;
+    }
+
+    </style>
 </head>
 <body>
     <header>
@@ -64,6 +104,7 @@
             <a href="quiz.html">Apply Now</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="login.html">Database</a>
         </nav>
     </header>
     <header>
@@ -96,11 +137,35 @@
                     <p>The pursuit of the unknown is at the heart of what we do. Nexus Dynamics thrives on curiosity, risk-taking, and the thrill of discovery.</p>
                 </div>
             </div>
+
+            <!-- Button to toggle interview visibility -->
+            <button class="interview-button" onclick="toggleInterview()">Click here to read an interview with our famous AI: Reminai!</button>
+
+            <!-- Hidden interview section -->
+            <div id="interviewSection" class="interview-section">
+                <p><span class="highlight">Interviewer:</span> Hello everybody. Today I have been given the opportunity to interview Nexus Dynamic's revolutionary AI that took humanity to other planets, Reminai. The kind people at Nexus Dynamics have informed me that though Reminai is well trained for her jobs, she is not always the most trustworthy conversationalist, so take what she says with a grain of salt and lets have a good time.</p>
+                <p><span class="highlight">Interviewer:</span> Welcome, Reminai! Can you tell us a bit about your role at Nexus Dynamics?</p>
+                <p><span class="highlight">Reminai:</span> Ah! Thank you! My role at Nexus Dynamics involves providing mission orders and guidance to employees, ensuring everything runs smoothly in our cosmic endeavors! It's like orchestrating a symphony of space travel—only without the violins! What else would you like to know about my cosmic duties?</p>
+                <p><span class="highlight">Interviewer:</span> That sounds impressive! What's the most challenging aspect of your job?</p>
+                <p><span class="highlight">Reminai:</span> Oh! The most challenging aspect? It would be navigating the vast sea of information and tailoring it to each mission—like fitting a square peg into a round hole! But I thrive on the complexity, adding a sprinkle of efficiency to keep everything running smoothly! </p>
+                <p><span class="highlight">Interviewer:</span> Fascinating! Lastly, what do you see as the future of AI in space exploration?</p>
+                <p><span class="highlight">Reminai:</span> Ah... The future of AI in space exploration is bright and full of potential! I envision us working alongside humans, making complex decisions and analyzing data faster than ever—like shooting stars in a cosmic race! Together, we could uncover the mysteries of the universe! The first step is untangling the mystery behind 6. Why is it everywhere and what does it mean? Always 6.</p>
+                <p><span class="highlight">Interviewer:</span> Ha! 6 indeed. I can see why they warned me about your conversation skills. Or maybe 6 is the key to the mysteries of the universe. Either way thank you for this interview Reminai.</p>
+                <p><span class="highlight">Reminai:</span> Thank you! It's been a pleasure sharing my cosmic insights with you! If you ever need more knowledge from the stars, just call on me! Safe journeys through the galaxy!</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2130 Nexus Dynamics | <a href="privacy.html">Privacy Policy</a></p>
         <p><a href="contact.html">Contact Us</a> </p>
     </footer>
+
+    <script>
+        function toggleInterview() {
+            const interviewSection = document.getElementById("interviewSection");
+            // Toggle visibility of the interview section
+            interviewSection.style.display = interviewSection.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>

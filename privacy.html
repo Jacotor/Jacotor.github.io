@@ -8,12 +8,40 @@
     <style>
         /* Specific styling for privacy page */
         .no-privacy-message {
-        color: red;
-        font-size: 6rem; /* Giant text size */
-        text-align: center;
-        margin-top: 20vh; /* Center it vertically */
-        font-family: 'Orbitron', sans-serif; /* Keep the spacey, techy font */
-    }
+            color: red;
+            font-size: 6rem;
+            text-align: center;
+            margin-top: 20vh;
+            font-family: 'Orbitron', sans-serif;
+        }
+        /* Invisible button style */
+        .invisible-button {
+            position: absolute;
+            top: 40%; /* Adjust as needed */
+            left: 0;
+            width: 100%;
+            height: 20vh; /* Adjust as needed */
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            -webkit-tap-highlight-color: transparent; /* Remove highlight on mobile */
+            opacity: 0; /* Fully invisible */
+        }
+        /* Hidden message style */
+        .hidden-message {
+            display: none; /* Initially hidden */
+            text-align: left;
+            font-size: 2rem;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        /* Custom colors for specific words */
+        .highlight-yellow { color: yellow; }
+        .highlight-blue { color: blue; }
+        .highlight-green { color: green; }
+        .highlight-white { color: white; }
     </style>
 </head>
 <body>
@@ -21,6 +49,24 @@
         <div class="no-privacy-message">
             THERE IS NO PRIVACY
         </div>
+        <button class="invisible-button" onclick="toggleMessage()"></button>
+        <div id="expandedMessage" class="hidden-message">
+            <span class="highlight-yellow">YC</span>: What was the password for the 'admin' account again? <br>
+            <span class="highlight-blue">BC</span>: The animal, the number, then the acronym. All lowercase. No spaces. <br>
+            <span class="highlight-yellow">YC</span>: All lowercase? That is a security issue. <br>
+            <span class="highlight-green">GC</span>: Those letters were an acronym? I thought they were just random. What do they stand for? <br>
+            <span class="highlight-yellow">YC</span>: Material Reclamation System. <br>
+            <span class="highlight-white">WC</span>: Magic Research Society. <br>
+            <span class="highlight-blue">BC</span>: Quiet now. There is no privacy. <br>
+        </div>
     </main>
+
+    <script>
+        function toggleMessage() {
+            const message = document.getElementById("expandedMessage");
+            // Toggle visibility of the hidden message
+            message.style.display = message.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
