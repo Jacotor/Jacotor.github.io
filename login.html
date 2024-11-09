@@ -43,7 +43,7 @@
             event.preventDefault();
 
             // Debugging: Let's log what we're getting from the input fields
-            const inputUsername = document.getElementById('username').value;
+            const inputUsername = document.getElementById('username').value.toLowerCase();
             const inputPassword = document.getElementById('password').value;
 
             console.log("Username entered: ", inputUsername);
@@ -52,7 +52,7 @@
             console.log("Valid Password: ", validPassword);
 
             // Simple client-side validation
-            if (inputUsername === validUsername && inputPassword === validPassword || inputeUsername === validUsername2 && inputPassword === validPassword) {
+            if (inputUsername === validUsername.toLowerCase() && inputPassword === validPassword) {
                 console.log("Login successful!");
                 localStorage.setItem('loggedIn', 'true');
                 window.location.href = database;
