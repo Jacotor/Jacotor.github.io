@@ -123,12 +123,21 @@
     "PLANET9INFO": "All information on Cile must be kept secure. For available information see 'Beacon'",
     "PLANET10NAME": "Lataxia",
     "PLANET10INFO": "Salvaged, just barely a memory. Clearly, a Frenchman made it before us. Excellent mining spot. Dealing with Skylarc and all their patrons is an annoying inconvenience.",
-    "PLANET11NAME": "Olympus",
-    "PLANET11INFO": "Annoyingly, the people of this planet decided not to give it a name. At some point, it appears some grand magic broke apart the land into multiple islands. Extremely powerful beings are constantly at work. Not a good planet to work on directly, the 'gods' could make good business partners.",
+    "PLANET11NAME": "Gaia",
+    "PLANET11INFO": "At some point, it appears some grand magic broke apart the land into multiple islands. Extremely powerful beings are constantly at work. Not a good planet to work on directly, the 'gods' could make good business partners.",
     "PLANET12NAME": "Praxia",
     "PLANET12INFO": "The surface of Praxia is covered by dense vegetation and wildlife mutated to survive in extreme conditions, making it a dangerous place to venture. Almost all sentient life lives on floating islands. The separation of these islands causes unique cultures to arise in various locations. We have made good use of this levitation technology. I believe a project to reform the surface is in order.",
     "PLANET13NAME": "Paran",
     "PLANET13INFO": "Unfortunately, the world has broken apart. A few former residents were found on a small protected area. We have detained a few survivors for research purposes. All expeditions to the planet should be canceled.",
     "PLANET14NAME": "Echidorn",
-    "PLANET14INFO": "A fairly primitive world. Very powerful beings watch over the population but have prevented themselves from intervening. I recommend slowly setting up in Perphonia and expanding influence from there. A wish is to be granted to those that complete certain trials, which should be our goal."
+    "PLANET14INFO": "A fairly primitive world. Very powerful beings watch over the population but have prevented themselves from intervening. I recommend slowly setting up in Perphonia and expanding influence from there. A wish is to be granted to those that complete certain trials, which should be our goal.",
+    "PLANET15NAME": "Auntheron",
+    "PLANET15INFO": "For a long time this world was shielded, preventing anyone from accessing it. Now that it is accessible research is ongoing. Massively powerful beings are watching here and they are not the type to be negotiated with. There are up and coming businesses already holding some emerging technology utilizing powerful artifacts. We must not allow competition.",
+    "PLANET16NAME": "Terra",
+    "PLANET16INFO": "Emerging technologically, the real wonder of Terra is that its people can draw power from major spirits, an ability only otherwise seen in our local 6. Powerful magical artifacts have been discovered here and MRS agents have been sent to retrieve them. Monsters are not uncommon, so additional guards may be necessary.",
+    "PLANET17NAME": "Kenoma",
+    "PLANET17INFO": "Newly found planet. Research in progress.",
+    "PLANET18NAME": "Pandora",
+    "PLANET18INFO": "The so called 'west' of this Pandora is highly chaotic with very little enforced law. Elsewhere multiple studies in local magic and alchemy show the potential for real progress. We should make contact with the various schools and see if we can learn anything from them."
+
 }
