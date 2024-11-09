@@ -1,12 +1,12 @@
 {
-    "comment": "Congratulations you found the config file. 
-Normally this would all be private, but on github pages the only way to make it private is to host it locally. 
-Which is super annoying.
-Please ignore this file.
-You can find everything you need on the website itself without looking at the source code.
-I'll even give you a hint.
-The privacy page might have more than meets the eye.
-Good luck.
+    "comment": "Congratulations you found the config file.",
+    "comment2": "Normally this would all be private, but on github pages the only way to make it private is to host it locally.",
+    "comment3": "Which is super annoying.",
+    "comment4": "Please ignore this file.",
+    "comment5": "You can find everything you need on the website itself without looking at the source code.",
+    "comment6": "I'll even give you a hint.",
+    "comment7": "The privacy page might have more than meets the eye.",
+    "comment8": "Good luck.",
 
 
 
@@ -57,7 +57,14 @@ Good luck.
 
 
 
-:p",
+
+
+    
+
+
+
+
+
 
     "username": "admin",
     "password": "panther6mrs",
